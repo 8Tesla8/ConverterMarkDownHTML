@@ -1,0 +1,274 @@
+﻿<Window x:Class="MarkDownWPFMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ignore="http://www.galasoft.ch/ignore"
+        mc:Ignorable="d ignore"
+        xmlns:local="clr-namespace:MarkDownWPFMVVM.ViewModel"
+        Height="400" MinHeight="400"
+        Width="500" MinWidth="500"
+        Title="MarkDown WPF MVVM" Loaded="MainWindow_Loaded" >
+    <!--DataContext="{Binding Main, Source={StaticResource Locator}}"-->
+
+    <Window.DataContext>
+        <local:MainWindowViewModel></local:MainWindowViewModel>
+    </Window.DataContext>
+
+
+
+    <Window.Resources>
+        <Style x:Key="Btn">
+            <Setter Property="Control.FontFamily" Value="Times new Roman" />
+            <Setter Property="Control.FontSize" Value="12" />
+            <Setter Property="Control.FontWeight" Value="Bold" />
+            <Setter Property="Control.Margin" Value="2" />
+            <Setter Property="Control.Padding" Value="2" />
+            <Setter Property="Control.UseLayoutRounding" Value="True" />
+            <Setter Property="Control.Background" Value="Black" />
+            <Setter Property="Control.HorizontalAlignment" Value="Center" />
+            <Setter Property="Control.VerticalAlignment" Value="Center" />
+            <!--<Setter Property="Control.Height" Value="30" />
+            <Setter Property="Control.Width" Value="30" />-->
+
+        </Style>
+
+        <ResourceDictionary x:Key="ResourceDictionary">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Window.Resources>
+
+    <Window.InputBindings>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="Bold" 
+             Gesture="CTRL+B"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="Italic" 
+             Gesture="CTRL+I"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="CodeSpan" 
+             Gesture="CTRL+O"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="Blockquote" 
+             Gesture="CTRL+Q"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="Strikethrough" 
+             Gesture="CTRL+T"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="Header" 
+             Gesture="CTRL+H"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="HorizontalRule" 
+             Gesture="CTRL+R"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="Email" 
+             Gesture="CTRL+M"/>
+        <KeyBinding 
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="HTTP" 
+             Gesture="CTRL+W"/>
+        <KeyBinding 
+             Command="{Binding LoadBtnPressCommand}" 
+             Gesture="CTRL+P"/>
+        <KeyBinding 
+             Command="{Binding SaveBtnPressCommand}" 
+             Gesture="CTRL+S"/>
+        <KeyBinding 
+             Command="{Binding ClearBtnPressCommand}"  
+             Gesture="CTRL+L"/>
+        <KeyBinding 
+             Command="{Binding AboutBtnPressCommand}" 
+             Gesture="CTRL+U"/>
+        <!--изменение текста-->
+        <KeyBinding      
+             Command="{Binding AddTextBtnPressCommand}" CommandParameter="000" 
+             Gesture="CTRL+E"/>
+    </Window.InputBindings>
+    
+    <Grid x:Name="LayoutRoot">
+
+        <Grid x:Name="Window" Height="auto" Width="auto" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            
+            <TextBox x:Name="MdTextBox" Margin="5" Grid.Row="2" Grid.Column="0" 
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Visible" 
+                     AcceptsReturn="True"  SelectionChanged="TextBox_SelectionChanged"
+                     Text="{Binding Path=MdText, Mode=TwoWay}" TextChanged="MDTextBox_Changed" >
+             
+            </TextBox>
+
+
+            <TextBox x:Name="HtmlTextBox" Grid.Column="1" Grid.Row="2" Margin="5"  
+                     TextWrapping="Wrap" 
+                         IsReadOnly="True"
+                     Text="{Binding Path=HtmlText}" />
+
+            <TextBlock x:Name="BlockMd" Grid.Column="0" Grid.Row="1" Margin="3" Text="MarkDown text" 
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:Name="BlockHtml" Grid.Column="1" Grid.Row="1"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3" Text="HTML text" />
+
+            <!--меню кнопок-->
+            <Grid  x:Name="MenuButton" Margin="2" Grid.Column="0" Grid.Row ="0" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Border BorderBrush="Black" BorderThickness="1" Margin="1" CornerRadius="7" Grid.Column="0"/>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="1" CornerRadius="7" Grid.Column="1"/>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="1" CornerRadius="7" Grid.Column="2"/>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="1" CornerRadius="7" Grid.Column="3"/>
+
+                <Grid x:Name="TextEdit" Grid.Column="0" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="BtnBold" ToolTip="Bold CTRL+B" Grid.Column="0" 
+                		Style="{StaticResource Btn}"
+                        Command="{Binding AddTextBtnPressCommand}" CommandParameter="Bold"
+                        Click="Ck">
+                        <Image Source="Icons/Bold_11689_32.bmp"/>
+                       
+                    </Button>
+                    <Button x:Name="BtnItalic" ToolTip="Italic CTRL+I" Grid.Column="1" 
+                		Style="{StaticResource Btn}" 
+                        Command="{Binding AddTextBtnPressCommand}" CommandParameter="Italic"
+                        Click="Ck">
+                        <Image Source="Icons/Italic_11693_32.bmp"/>
+                    </Button>
+                    <Button x:Name="ButnCodeSpan" ToolTip="Code span CTRL+O" Grid.Column="2" 
+                		Style="{StaticResource Btn}"
+                        Command="{Binding AddTextBtnPressCommand}" CommandParameter="CodeSpan"
+                        Click="Ck">
+                        <Image Source="Icons/SendtoBack_10681_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnBlockquote" ToolTip="Blockquote CTRL+Q" Grid.Column="3" 
+                		Style="{StaticResource Btn}"
+                        Command="{Binding AddTextBtnPressCommand}" CommandParameter="Blockquote"
+                        Click="Ck">
+                        <Image Source="Icons/Quote ViewCode(Markup)_6279_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnStrikethrough" ToolTip="Strikethrough CTRL+T" Grid.Column="4" 
+                		Style="{StaticResource Btn}"
+                        Command="{Binding AddTextBtnPressCommand}" CommandParameter="Strikethrough"
+                        Click="Ck">
+                        <Image Source="Icons/strike2.bmp"/>
+                    </Button>
+                </Grid>
+
+                <Grid x:Name="OtherTextEdit" Grid.Column="1" Margin="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="BtnHeader" ToolTip="Header CTRL+H" Grid.Column="0" 
+                            Style="{StaticResource Btn}"
+                            Command="{Binding AddTextBtnPressCommand}" CommandParameter="Header"
+                            Click="Ck" >
+                        <Image Source="Icons/CurveTool_210_32.bmp" />
+
+                    </Button>
+                    <Button x:Name="BtnHorizontalRule" ToolTip="Horizintal rule CTRL+R" Grid.Column="1" 
+                            Style="{StaticResource Btn}"
+                            Command="{Binding AddTextBtnPressCommand}" CommandParameter="HorizontalRule"
+                            Click="Ck">
+                        <Image Source="Icons/Line Large_229_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnEmail" ToolTip="Email adress CTRL+E" Grid.Column="2" 
+                            Style="{StaticResource Btn}"
+                            Command="{Binding AddTextBtnPressCommand}" CommandParameter="Email"
+                            Click="Ck">
+                        <Image Source="Icons/Email 1.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnHttp" ToolTip="http:// CTRL+W" Grid.Column="3" 
+                            Style="{StaticResource Btn}"
+                            Command="{Binding AddTextBtnPressCommand}" CommandParameter="HTTP"
+                            Click="Ck">
+                        <Image Source="Icons/http.bmp"/>
+                    </Button>
+                </Grid>
+
+                <Grid x:Name="WorkWithTextMd" Grid.Column="2" Margin="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="BtnUndo" ToolTip="Undo" Grid.Column="0" 
+                            Style="{StaticResource Btn}" Click="Undo">
+                        <Image Source="Icons/Undo_Small_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnCrealText" ToolTip="Clear text CTRL+L" Grid.Column="1" 
+                            Style="{StaticResource Btn}"
+                            Command="{Binding ClearBtnPressCommand}" >
+                        <Image Source="Icons/EraseTool_203_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnOpen" ToolTip="Open Mark Down text CTRL+P" Grid.Column="2" 
+                            Style="{StaticResource Btn}" 
+                            Command="{Binding LoadBtnPressCommand}" >
+                        <Image Source="Icons/Open_6529_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnSave" ToolTip="Save Mark Down and HTML text CTRL+S" Grid.Column="3" 
+                            Style="{StaticResource Btn}" 
+                            Command="{Binding SaveBtnPressCommand}">
+                        <Image Source="Icons/Save_6530_32.bmp"/>
+                    </Button>
+                </Grid>
+
+                <Grid x:Name="Other" Grid.Column="3" Margin="2,2,2,1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="BtnHelp" ToolTip="Help syntax CTRL+U" Grid.Column="0" 
+                            Style="{StaticResource Btn}"
+                            Command="{Binding AboutBtnPressCommand}">
+                        <Image Source="Icons/Help_5659_32.bmp"/>
+                    </Button>
+                    <Button x:Name="BtnProp" ToolTip="Change style text CTRL+E" Grid.Column="1" 
+                            Style="{StaticResource Btn}" Click="FormatOfText">
+                        <Image Source="Icons/AddStyleRule_165_32.bmp"/>
+                    </Button>
+                </Grid>
+
+            </Grid>
+            <Button x:Name="Btn" Content="Prew Cursor" ToolTip="Cursor position on MarkDown text"
+                    TextBlock.TextAlignment="Center" HorizontalAlignment="Right" 
+                    Margin="0" Grid.Row="1" VerticalAlignment="Top" Width="66"
+                    Click="PrewCursorPosition">
+                <Button.InputBindings>
+                    <KeyBinding 
+                                Command="{Binding AddTextBtnPressCommand}" CommandParameter="Bold" 
+                                         Gesture="CTRL+W"/>
+                </Button.InputBindings>
+            </Button>
+
+        </Grid>
+
+    </Grid>
+</Window>

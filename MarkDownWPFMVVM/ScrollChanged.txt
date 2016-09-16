@@ -1,0 +1,33 @@
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ScrollViewer viewer = listBox1.Template.FindName("ScrollViewer", listBox1) as ScrollViewer;
+            if (viewer != null)
+            {
+                viewer.ScrollChanged += new ScrollChangedEventHandler(viewer_ScrollChanged);
+            }
+        }
+ 
+        void viewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        {
+            ScrollViewer viewer = sender as ScrollViewer;
+            viewer.ScrollToVerticalOffset(e.HorizontalOffset);
+        }
+
+
+//ScrollViewer.ScrollChanged 
+<UniformGrid Rows="1" Width="300" Height="150" >
+    <RichTextBox x:Name="_rich1" 
+                 VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.ScrollChanged="RichTextBox_ScrollChanged" />
+    <RichTextBox x:Name="_rich2" 
+                 VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.ScrollChanged="RichTextBox_ScrollChanged" />
+</UniformGrid>
+
+private void RichTextBox_ScrollChanged(object sender, ScrollChangedEventArgs e)
+{
+    var textToSync = (sender == _rich1) ? _rich2 : _rich1;
+
+    textToSync.ScrollToVerticalOffset(e.VerticalOffset);
+    textToSync.ScrollToHorizontalOffset(e.HorizontalOffset);
+}

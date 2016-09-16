@@ -1,0 +1,3 @@
+http://daringfireball.net/projects/markdown/dingus
+http://www.mobilefish.com/services/markdown/markdown.php
+https://stackedit.io/editor

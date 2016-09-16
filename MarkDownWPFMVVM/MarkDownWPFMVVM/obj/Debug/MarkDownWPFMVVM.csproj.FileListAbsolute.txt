@@ -1,0 +1,65 @@
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe.config
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.pdb
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe.CodeAnalysisLog.xml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe.lastcodeanalysissucceeded
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.dll
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\System.Windows.Interactivity.dll
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.pdb
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.xml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.csprojResolveAssemblyReference.cache
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\Skins\MainSkin.baml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\App.g.cs
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM_MarkupCompile.cache
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM_MarkupCompile.lref
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\App.baml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.g.resources
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.Properties.Resources.resources
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.csproj.GenerateResource.Cache
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.exe
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.pdb
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MainWindow.baml
+c:\users\lenovo888\documents\visual studio 2015\Projects\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MainWindow.g.cs
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe.config
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.exe
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.pdb
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\Skins\MainSkin.baml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MainWindow.g.cs
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\App.g.cs
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM_MarkupCompile.cache
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM_MarkupCompile.lref
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MainWindow.baml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.pdb
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe.CodeAnalysisLog.xml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\MarkDownWPFMVVM.exe.lastcodeanalysissucceeded
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\System.Windows.Interactivity.dll
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.g.resources
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.Properties.Resources.resources
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.csproj.GenerateResource.Cache
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\UserControlAbout.g.cs
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\UserControlAbout.baml
+D:\Программирование\Shag Work\WPF\дз\MarkDownWPFMVVM\MarkDownWPFMVVM\obj\Debug\MarkDownWPFMVVM.csprojResolveAssemblyReference.cache
